@@ -59,6 +59,9 @@ $wgEmbedVideoServiceList = array(
 	'interia' => array(
 		'url' => 'http://video.interia.pl/i/players/iVideoPlayer.05.swf?vid=$1',
 	),
+	'kickstarter' => array(
+		'extern' => '<iframe width="$3" height="$4" src="http://www.kickstarter.com/projects/$2/widget/video.html" frameborder="0" scrolling="no"> </iframe>'
+	),
 	'metacafe' => array(
 		'url' => 'http://www.metacafe.com/fplayer/$1.swf'
 	),
@@ -118,9 +121,7 @@ $wgEmbedVideoServiceList = array(
 	),
 	'youtube' => array(
 		'extern' =>
-			'<iframe src="http://www.youtube.com/embed/$2?showsearch=0&amp;modestbranding=1" ' .
-				'width="$3" height="$4" ' .
-				'frameborder="0" allowfullscreen="true"></iframe>',
+			'<div class="flex-video"><iframe src="http://www.youtube.com/embed/$2?showsearch=0&amp;modestbranding=1" frameborder="0" allowfullscreen="true"></iframe></div>',
 	),
 	'youtubehd' => array(
 		'extern' =>
